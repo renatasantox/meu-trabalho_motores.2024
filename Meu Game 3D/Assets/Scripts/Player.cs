@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
 {
     public int velocidade = 10;
     public Rigidbody rb;
-    public int forcaPulo = 10;
+    public int forcaPulo = 7;
     public bool noChao = true;
 
     // Start is called before the first frame update
@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
-        UnityEngine.Vector3 direcao = new Vector3(h, 0, v);
+        Vector3 direcao = new Vector3(h, 0, v);
         rb.AddForce(direcao * velocidade * Time.deltaTime, ForceMode.Impulse);
         if (Input.GetKeyDown(KeyCode.Space) && noChao == true)
         {
