@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    public int velocidade = 10;
+    public int velocidade = 3;
     public Rigidbody rb;
     public int forcaPulo = 7;
     public bool noChao = true;
