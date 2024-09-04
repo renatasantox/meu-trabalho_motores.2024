@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
 {
     public int velocidade = 3;
     public Rigidbody rb;
-    public int forcaPulo = 7;
+    public int forcaPulo = 5;
     public bool noChao = true;
 
     // Start is called before the first frame update
